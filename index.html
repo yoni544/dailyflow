@@ -253,6 +253,14 @@ footer{border-top:1px solid var(--cloud);padding:36px 0 44px;font-size:14px;colo
 .foot a{color:var(--ink);text-decoration:none;font-weight:600}
 .foot a:hover{color:var(--indigo)}
 .foot .links{display:flex;gap:22px;flex-wrap:wrap}
+.legal{margin-top:22px;font-size:13px;color:var(--graphite)}
+.legal summary{cursor:pointer;font-weight:600;color:var(--ink);width:max-content;list-style:none}
+.legal summary::-webkit-details-marker{display:none}
+.legal summary::after{content:" +";color:var(--graphite)}
+.legal[open] summary::after{content:" −"}
+.legal p{margin:10px 0 0;max-width:72ch;line-height:1.6}
+.legal a{font-weight:600;color:var(--ink);text-decoration:none}
+.legal a:hover{color:var(--indigo)}
 
 @media (max-width:900px){
   .hero-inner{grid-template-columns:1fr;gap:40px}
@@ -571,6 +579,17 @@ footer{border-top:1px solid var(--cloud);padding:36px 0 44px;font-size:14px;colo
       <!-- PLACEHOLDER: replace with Yoni's LinkedIn profile URL -->
       <a href="https://www.linkedin.com/in/yoni-malka-61aa6463/" rel="noopener">LinkedIn</a>
     </div>
+  </div>
+  <div class="wrap">
+    <details class="legal" id="mentions-legales">
+      <summary><span lang="fr">Mentions légales</span><span lang="en">Legal notice</span></summary>
+      <p lang="fr"><strong>Éditeur :</strong> Daily Flow, société par actions simplifiée au capital de 5 000 €, siège social 59 rue de Ponthieu, bureau 326, 75008 Paris. RCS Paris 108 501 370 · SIRET 108 501 370 00010 · TVA intracommunautaire FR58108501370. Directeur de la publication : Yoni Malka, président. Contact : <a href="mailto:contact@dailyflow.fr">contact@dailyflow.fr</a>.</p>
+      <p lang="fr"><strong>Hébergeur :</strong> GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, États-Unis, +1 415 735 4488.</p>
+      <p lang="fr"><strong>Données personnelles :</strong> ce site ne dépose aucun cookie et n'utilise aucun outil de mesure d'audience. Les e-mails que vous nous adressez servent uniquement à vous répondre. Vous pouvez demander leur suppression à la même adresse.</p>
+      <p lang="en"><strong>Publisher:</strong> Daily Flow, a French simplified joint-stock company (SAS) with a share capital of €5,000, registered office 59 rue de Ponthieu, office 326, 75008 Paris, France. Paris Trade Register 108 501 370 · VAT FR58108501370. Publishing director: Yoni Malka, President. Contact: <a href="mailto:contact@dailyflow.fr">contact@dailyflow.fr</a>.</p>
+      <p lang="en"><strong>Hosting:</strong> GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA, +1 415 735 4488.</p>
+      <p lang="en"><strong>Personal data:</strong> this site sets no cookies and uses no analytics. Emails you send us are used only to reply to you. You can ask for their deletion at the same address.</p>
+    </details>
   </div>
 </footer>
 
